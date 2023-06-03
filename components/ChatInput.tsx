@@ -1,14 +1,19 @@
 'use client'
 import { PaperAirplaneIcon } from '@heroicons/react/24/solid'
 import { FormEvent, useState } from 'react'
+import { toast } from 'react-hot-toast'
 
 function ChatInput({ messages, setMessages }: any) {
   const [prompt, setPrompt] = useState('')
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setMessages([...messages, prompt])
-    setPrompt('')
+    if (prompt == '') {
+      toast.error('Message field empty')
+    } else {
+      setMessages([...messages, prompt])
+      setPrompt('')
+    }
   }
 
   return (

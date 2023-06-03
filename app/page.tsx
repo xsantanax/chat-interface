@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import ChatInput from '@/components/ChatInput'
 import NameInput from '@/components/NameInput'
+import { Toaster } from 'react-hot-toast'
 
 export default function Home() {
   const [name, setName] = useState('')
@@ -9,6 +10,7 @@ export default function Home() {
 
   return (
     <main className='bg-white flex min-h-screen flex-col items-center p-16 gap-10 '>
+      <Toaster position='top-right' />
       <div>Your name is: {name == '' ? 'not informed' : name}</div>
       <NameInput setName={setName} />
 

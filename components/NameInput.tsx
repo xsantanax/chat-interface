@@ -1,13 +1,18 @@
 'use client'
 import { FormEvent, useState } from 'react'
+import { toast } from 'react-hot-toast'
 
 function NameInput({ setName }: any) {
   const [prompt, setPrompt] = useState('')
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setName(prompt)
-    setPrompt('')
+    if (prompt == '') {
+      toast.error('Name field empty')
+    } else {
+      setName(prompt)
+      setPrompt('')
+    }
   }
 
   return (
