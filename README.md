@@ -1,8 +1,8 @@
-This is a simple chat interface project designed to showcase frontend skills.
+This is a simple web chat interface project designed to showcase frontend engineering experience.
 
-## End Result
+### Live Demo
 
-You can check the end result at [https://chat-interface-xsantanax.vercel.app](https://chat-interface-xsantanax.vercel.app).
+You can check the app live demo at [https://chat-interface-xsantanax.vercel.app](https://chat-interface-xsantanax.vercel.app).
 
 You can also run it in your machine. First, run the development server:
 
@@ -14,14 +14,14 @@ yarn dev
 
 Then, open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Stack Information
+### Stack Choices
 
-This project uses [`create-next-app`](https://react.dev/learn/start-a-new-react-project) as one of the recommended react web frameworks.
+- [ReactJS](https://reactjs.org/docs/getting-started.html) was chosen as the base framework due to its simplicity, popularity, and ability to achieve any desired result.
 
-SASS was chosen for styling due to its robustness, simplicity, and scalability.
+- [NextJS](https://nextjs.org/docs) was the chosen react framework since it is designed to serve web apps, which is the project case. [`See react recommended frameworks`](https://react.dev/learn/start-a-new-react-project)
 
-ContextAPI was chosen for state management due to its robustness, simplicity, and scalability.
+- [TypeScript](https://www.typescriptlang.org/) was used for type safety, bringing robustness and scalability to the project.
 
-- [ReactJS](https://reactjs.org/docs/getting-started.html)
-- [NextJS](https://nextjs.org/docs)
-- [TypeScript](https://www.typescriptlang.org/)
+- [ContextAPI](https://react.dev/reference/react/createContext) was chosen for state management due to its robustness, simplicity, and scalability.
+
+- [SASS](https://sass-lang.com) was chosen for styling due to its robustness, simplicity, and scalability.
