@@ -10,7 +10,7 @@ export default function Home() {
   const [messages, setMessages] = useState([])
 
   return (
-    <main className={styles.myContainer}>
+    <main className={styles.container}>
       <Toaster position='top-right' />
 
       <div>Your name is: {name == '' ? 'not informed' : name}</div>

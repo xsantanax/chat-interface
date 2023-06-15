@@ -1,15 +1,17 @@
-.myContainer 
-  background-color: white
+@mixin col()
   display: flex
   flex-direction: column
+
+.container
+  @include col 
+  background-color: white
   min-height: 100vh
   align-items: center
   padding: 16px
   gap: 10px
 
 .messages
-  display: flex
-  flex-direction: column
+  @include col 
   gap: 16px
   margin-top: 24px
 
