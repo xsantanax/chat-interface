@@ -1,6 +1,7 @@
 'use client'
 import { FormEvent, useState } from 'react'
 import { toast } from 'react-hot-toast'
+import styles from '../styles/input.module.sass'
 
 function NameInput({ setName }: any) {
   const [prompt, setPrompt] = useState('')
@@ -16,21 +17,16 @@ function NameInput({ setName }: any) {
   }
 
   return (
-    <div className='border rounded-lg text-sm w-[400px]'>
-      <form onSubmit={handleSubmit} className='p-5 space-x-5 flex'>
+    <div className={styles.container}>
+      <form onSubmit={handleSubmit} className={styles.form}>
         <input
-          className='bg-transparent flex-1 focus:outline-none '
+          className={styles.input}
           type='text'
           value={prompt}
           placeholder='Update name here...'
           onChange={(e) => setPrompt(e.target.value)}
         />
-        <button
-          type='submit'
-          // disabled={!prompt}
-          className='bg-[#11A37F] hover:opacity-50 text-white font-bold px-4 py-2 rounded
-      disabled:cursor-not-allowed disabled:bg-gray-300'
-        >
+        <button type='submit' className={styles.button}>
           Update
         </button>
       </form>

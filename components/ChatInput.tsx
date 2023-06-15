@@ -2,6 +2,7 @@
 import { PaperAirplaneIcon } from '@heroicons/react/24/solid'
 import { FormEvent, useState } from 'react'
 import { toast } from 'react-hot-toast'
+import styles from '../styles/input.module.sass'
 
 function ChatInput({ messages, setMessages }: any) {
   const [prompt, setPrompt] = useState('')
@@ -17,22 +18,17 @@ function ChatInput({ messages, setMessages }: any) {
   }
 
   return (
-    <div className='border rounded-lg text-sm w-[400px]'>
-      <form onSubmit={handleSubmit} className='p-5 space-x-5 flex'>
+    <div className={styles.container}>
+      <form onSubmit={handleSubmit} className={styles.form}>
         <input
-          className='bg-transparent flex-1 focus:outline-none'
+          className={styles.input}
           type='text'
           value={prompt}
           placeholder='Type your message here...'
           onChange={(e) => setPrompt(e.target.value)}
         />
-        <button
-          type='submit'
-          // disabled={!prompt}
-          className='bg-[#11A37F] hover:opacity-50 text-white font-bold px-4 py-2 rounded
-          disabled:cursor-not-allowed disabled:bg-gray-300'
-        >
-          <PaperAirplaneIcon className='h-4 w-4 -rotate-45' />
+        <button type='submit' className={styles.button}>
+          <PaperAirplaneIcon className={styles.icon} />
         </button>
       </form>
     </div>
