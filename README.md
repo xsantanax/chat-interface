@@ -18,7 +18,8 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 - [ReactJS](https://reactjs.org/docs/getting-started.html) was chosen as the base framework due to its simplicity, popularity, and ability to achieve any desired result.
 
-- [NextJS](https://nextjs.org/docs) was the chosen react framework since it is designed to serve web apps, which is the project case. [`See react recommended frameworks`](https://react.dev/learn/start-a-new-react-project)
+- [NextJS](https://nextjs.org/docs) was the chosen react framework since it is designed to serve web apps, which is this project case.
+  [`(See react recommended frameworks)`](https://react.dev/learn/start-a-new-react-project)
 
 - [TypeScript](https://www.typescriptlang.org/) was used for type safety, bringing robustness and scalability to the project.
 

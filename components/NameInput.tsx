@@ -17,20 +17,18 @@ function NameInput({ setName }: any) {
   }
 
   return (
-    <div className={styles.container}>
-      <form onSubmit={handleSubmit} className={styles.form}>
-        <input
-          className={styles.input}
-          type='text'
-          value={prompt}
-          placeholder='Update name here...'
-          onChange={(e) => setPrompt(e.target.value)}
-        />
-        <button type='submit' className={styles.button}>
-          Update
-        </button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit} className={styles.form}>
+      <input
+        className={styles.input}
+        type='text'
+        value={prompt}
+        placeholder='Update name here...'
+        onChange={(e) => setPrompt(e.target.value)}
+      />
+      <button type='submit' className={styles.button}>
+        Update
+      </button>
+    </form>
   )
 }
 

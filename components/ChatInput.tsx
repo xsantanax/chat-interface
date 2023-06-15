@@ -18,20 +18,18 @@ function ChatInput({ messages, setMessages }: any) {
   }
 
   return (
-    <div className={styles.container}>
-      <form onSubmit={handleSubmit} className={styles.form}>
-        <input
-          className={styles.input}
-          type='text'
-          value={prompt}
-          placeholder='Type your message here...'
-          onChange={(e) => setPrompt(e.target.value)}
-        />
-        <button type='submit' className={styles.button}>
-          <PaperAirplaneIcon className={styles.icon} />
-        </button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit} className={styles.form}>
+      <input
+        className={styles.input}
+        type='text'
+        value={prompt}
+        placeholder='Type your message here...'
+        onChange={(e) => setPrompt(e.target.value)}
+      />
+      <button type='submit' className={styles.button}>
+        <PaperAirplaneIcon className={styles.icon} />
+      </button>
+    </form>
   )
 }
 
