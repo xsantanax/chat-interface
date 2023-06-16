@@ -14,11 +14,11 @@ describe('Rendering', () => {
     expect(intro).toHaveClass('intro')
   })
 
-  it('renders a div to display name with "Your name is" text and "nameDisplay" class', () => {
+  it('renders a div to display name with "Your name is" text and "label" class', () => {
     render(<App />)
     const nameDisplay = screen.getByText(/Your name is/)
     expect(nameDisplay).toBeInTheDocument()
-    expect(nameDisplay).toHaveClass('nameDisplay')
+    expect(nameDisplay).toHaveClass('label')
   })
 
   it('renders a name input with "Update name here..." placeholder and "input" class', () => {

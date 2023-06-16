@@ -18,7 +18,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 The following tools have been chosen due to their robustness, simplicity, and scalability.
 
-- [ReactJS](https://reactjs.org/docs/getting-started.html) was chosen as the base frontend framework.
+- [ReactJS](https://react.dev/) was chosen as the base frontend framework.
 
 - [NextJS](https://nextjs.org/docs) was chosen as the React framework since it is degined for serving web applications, which is this project case.
   [`(See react recommended frameworks)`](https://react.dev/learn/start-a-new-react-project)

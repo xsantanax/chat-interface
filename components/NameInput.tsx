@@ -20,8 +20,8 @@ function NameInput() {
 
   return (
     <>
-      <div className={styles.nameDisplay}>
-        Your name is: {name == '' ? 'not informed' : name}
+      <div className={styles.label}>
+        Your name is: <u>{name == '' ? 'not informed' : name}</u>
       </div>
 
       <form onSubmit={handleSubmit} className={styles.form}>
