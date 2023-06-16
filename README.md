@@ -31,4 +31,10 @@ The following tools have been chosen due to their robustness, simplicity, and sc
 
 - [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) were chosen for testing.
 
+### More
+
+The simple architecture can easily be upgraded to a microfrontend structure as business scales.
+
+The automated tests written are requirement driven, preventing future code changes from affecting business requirements.
+
 The app is 100% responsive for any screen with 360 horizontal pixels or more. [(which are all)](https://gs.statcounter.com/screen-resolution-stats/mobile/worldwide)
