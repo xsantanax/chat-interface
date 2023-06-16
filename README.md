@@ -33,8 +33,8 @@ The following tools have been chosen due to their robustness, simplicity, and sc
 
 ### More
 
-The simple architecture can easily be upgraded to a microfrontend structure as business scales.
+The app simple architecture can easily be upgraded to a microfrontend structure as business scales.
 
 The automated tests written are requirement driven, preventing future code changes from affecting business requirements.
 
-The app is 100% responsive for any screen with 360 horizontal pixels or more. [(which are all)](https://gs.statcounter.com/screen-resolution-stats/mobile/worldwide)
+The app is 100% responsive for any screen with 360 horizontal pixels or more. [`(Which are all)`](https://gs.statcounter.com/screen-resolution-stats/mobile/worldwide)
