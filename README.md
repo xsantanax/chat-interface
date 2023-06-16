@@ -16,13 +16,17 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 ### Stack Choices
 
-- [ReactJS](https://reactjs.org/docs/getting-started.html) was chosen as the base framework due to its simplicity, popularity, and ability to achieve any desired result.
+All stack choices were made based on the tools robustness, simplicity, and scalability.
 
-- [NextJS](https://nextjs.org/docs) was the chosen react framework since it is designed to serve web apps, which is this project case.
+- [ReactJS](https://reactjs.org/docs/getting-started.html) was chosen as the base frontend framework.
+
+- [NextJS](https://nextjs.org/docs) was chosen as the React framework since it is degined for serving web applications, which is this project case.
   [`(See react recommended frameworks)`](https://react.dev/learn/start-a-new-react-project)
 
-- [TypeScript](https://www.typescriptlang.org/) was used for type safety, bringing robustness and scalability to the project.
+- [TypeScript](https://www.typescriptlang.org/) was chosen for type safety.
 
-- [ContextAPI](https://react.dev/reference/react/createContext) was chosen for state management due to its robustness, simplicity, and scalability.
+- [ContextAPI](https://react.dev/reference/react/createContext) was chosen for state management.
 
-- [SASS](https://sass-lang.com) was chosen for styling due to its robustness, simplicity, and scalability.
+- [SASS](https://sass-lang.com) was chosen for styling.
+
+- [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) were chosen for testing.
