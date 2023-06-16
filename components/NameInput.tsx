@@ -1,3 +1,4 @@
+'use client'
 import { FormEvent, useState } from 'react'
 import { toast } from 'react-hot-toast'
 import { useName } from '@/hooks/useName'

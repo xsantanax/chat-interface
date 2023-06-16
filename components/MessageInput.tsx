@@ -1,3 +1,4 @@
+'use client'
 import { FormEvent, useState } from 'react'
 import { PaperAirplaneIcon } from '@heroicons/react/24/solid'
 import { toast } from 'react-hot-toast'
