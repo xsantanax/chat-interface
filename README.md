@@ -16,7 +16,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 ### Stack Choices
 
-All stack choices were made based on the tools robustness, simplicity, and scalability.
+The following tools have been chosen due to their robustness, simplicity, and scalability.
 
 - [ReactJS](https://reactjs.org/docs/getting-started.html) was chosen as the base frontend framework.
 
