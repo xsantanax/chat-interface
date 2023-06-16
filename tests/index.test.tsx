@@ -1,23 +1,24 @@
 import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import App from '@/app/page'
 import MessageInput from '@/components/MessageInput'
 import NameInput from '@/components/NameInput'
-import userEvent from '@testing-library/user-event'
 import { MessagesProvider } from '@/hooks/useMessages'
 import { NameProvider } from '@/hooks/useName'
 
 describe('Rendering', () => {
-  it('renders an app intro with "This is" text', () => {
+  it('renders an app intro with "This is" text and "intro" class', () => {
     render(<App />)
     const intro = screen.getByText(/This is/)
     expect(intro).toBeInTheDocument()
+    expect(intro).toHaveClass('intro')
   })
 
-  it('renders a div to display name with "Your name is" text and "label" class', () => {
+  it('renders a div to display name with "Your name is" text and "nameDisplay" class', () => {
     render(<App />)
     const nameDisplay = screen.getByText(/Your name is/)
     expect(nameDisplay).toBeInTheDocument()
-    expect(nameDisplay).toHaveClass('label')
+    expect(nameDisplay).toHaveClass('nameDisplay')
   })
 
   it('renders a name input with "Update name here..." placeholder and "input" class', () => {

@@ -1,6 +1,6 @@
-import styles from '../styles/app.module.sass'
 import { useMessages } from '@/hooks/useMessages'
 import { useName } from '@/hooks/useName'
+import styles from '@/styles/app.module.sass'
 
 function MessageList() {
   const { messages } = useMessages()

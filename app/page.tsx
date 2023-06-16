@@ -1,11 +1,10 @@
-'use client'
-import styles from '@/styles/app.module.sass'
+import { Toaster } from 'react-hot-toast'
 import MessageInput from '@/components/MessageInput'
 import NameInput from '@/components/NameInput'
 import MessageList from '@/components/MessageList'
 import { MessagesProvider } from '@/hooks/useMessages'
 import { NameProvider } from '@/hooks/useName'
-import { Toaster } from 'react-hot-toast'
+import styles from '@/styles/app.module.sass'
 
 export default function Home() {
   return (
@@ -13,7 +12,7 @@ export default function Home() {
       <Toaster position='top-right' />
       <MessagesProvider>
         <NameProvider>
-          <div style={{ margin: 32, width: 400, textAlign: 'center' }}>
+          <div className={styles.intro}>
             This is a simple chat interface where you can set your name and send
             messages, which will be displayed on the screen.
           </div>

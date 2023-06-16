@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react'
 import { toast } from 'react-hot-toast'
-import styles from '../styles/input.module.sass'
-import { useName } from '../hooks/useName'
+import { useName } from '@/hooks/useName'
+import styles from '@/styles/input.module.sass'
 
 function NameInput() {
   const [prompt, setPrompt] = useState('')
@@ -19,7 +19,7 @@ function NameInput() {
 
   return (
     <>
-      <div className={styles.label}>
+      <div className={styles.nameDisplay}>
         Your name is: {name == '' ? 'not informed' : name}
       </div>
 

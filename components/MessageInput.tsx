@@ -1,8 +1,8 @@
-import { PaperAirplaneIcon } from '@heroicons/react/24/solid'
 import { FormEvent, useState } from 'react'
+import { PaperAirplaneIcon } from '@heroicons/react/24/solid'
 import { toast } from 'react-hot-toast'
-import { useMessages } from '../hooks/useMessages'
-import styles from '../styles/input.module.sass'
+import { useMessages } from '@/hooks/useMessages'
+import styles from '@/styles/input.module.sass'
 
 export default function MessageInput() {
   const [prompt, setPrompt] = useState('')
