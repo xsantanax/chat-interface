@@ -1,11 +1,10 @@
-'use client'
 import { PaperAirplaneIcon } from '@heroicons/react/24/solid'
 import { FormEvent, useState } from 'react'
 import { toast } from 'react-hot-toast'
 import { useMessages } from '../hooks/useMessages'
 import styles from '../styles/input.module.sass'
 
-function ChatInput() {
+export default function MessageInput() {
   const [prompt, setPrompt] = useState('')
   const { messages, setMessages } = useMessages()
 
@@ -31,12 +30,14 @@ function ChatInput() {
           placeholder='Type your message here...'
           onChange={(e) => setPrompt(e.target.value)}
         />
-        <button type='submit' className={styles.button}>
+        <button
+          data-testid='sendMessageButton'
+          type='submit'
+          className={styles.button}
+        >
           <PaperAirplaneIcon className={styles.icon} />
         </button>
       </form>
     </>
   )
 }
-
-export default ChatInput

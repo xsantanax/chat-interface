@@ -7,10 +7,10 @@ function MessageList() {
   const { name } = useName()
 
   return (
-    <div className={styles.messages}>
-      {messages.map((msg: string) => {
+    <div data-testid='messageList' className={styles.list}>
+      {messages.map((msg: string, index: number) => {
         return (
-          <div>
+          <div key={index}>
             {name == '' ? '(No name)' : name}: {msg}
           </div>
         )

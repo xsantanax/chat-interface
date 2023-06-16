@@ -1,6 +1,6 @@
 'use client'
 import styles from '@/styles/app.module.sass'
-import ChatInput from '@/components/ChatInput'
+import MessageInput from '@/components/MessageInput'
 import NameInput from '@/components/NameInput'
 import MessageList from '@/components/MessageList'
 import { MessagesProvider } from '@/hooks/useMessages'
@@ -13,8 +13,12 @@ export default function Home() {
       <Toaster position='top-right' />
       <MessagesProvider>
         <NameProvider>
+          <div style={{ margin: 32, width: 400, textAlign: 'center' }}>
+            This is a simple chat interface where you can set your name and send
+            messages, which will be displayed on the screen.
+          </div>
           <NameInput />
-          <ChatInput />
+          <MessageInput />
           <MessageList />
         </NameProvider>
       </MessagesProvider>
