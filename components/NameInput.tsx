@@ -1,4 +1,3 @@
-'use client'
 import { FormEvent, useState } from 'react'
 import { toast } from 'react-hot-toast'
 import styles from '../styles/input.module.sass'
@@ -32,7 +31,11 @@ function NameInput() {
           placeholder='Update name here...'
           onChange={(e) => setPrompt(e.target.value)}
         />
-        <button type='submit' className={styles.button}>
+        <button
+          data-testid='updateNameButton'
+          type='submit'
+          className={styles.button}
+        >
           Update
         </button>
       </form>
