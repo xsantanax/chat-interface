@@ -30,3 +30,5 @@ The following tools have been chosen due to their robustness, simplicity, and sc
 - [SASS](https://sass-lang.com) was chosen for styling.
 
 - [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) were chosen for testing.
+
+The app is 100% responsive for any screen with 360 horizontal pixels or more. [(which are all)](https://gs.statcounter.com/screen-resolution-stats/mobile/worldwide)
