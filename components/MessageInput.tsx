@@ -11,7 +11,7 @@ export default function MessageInput() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    if (prompt == '') {
+    if (prompt.trim() == '') {
       toast.error('Message field empty')
     } else {
       setMessages([...messages, prompt])

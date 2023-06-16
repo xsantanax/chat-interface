@@ -10,7 +10,7 @@ function NameInput() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    if (prompt == '') {
+    if (prompt.trim() == '') {
       toast.error('Name field empty')
     } else {
       setName(prompt)
