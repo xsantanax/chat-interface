@@ -8,12 +8,6 @@ You can check the app live demo at [https://chat-interface-xsantanax.vercel.app]
 
 You can also run it in your machine. First, run the development server. (`npm run dev` or `yarn dev`)
 
-<!-- ```bash
-npm run dev
-# or
-yarn dev
-``` -->
-
 Then, open [http://localhost:3000](http://localhost:3000) in your web browser to see the result.
 
 <!--
@@ -43,7 +37,17 @@ The following tools have been chosen due to their robustness, simplicity, mainte
 
 ## Architecture
 
-The architecture is comprehensive and utilizes modern technologies and best practices for building robust and scalable web applications. Here's a summary and elaboration on each component of the architecture:
+This solution architecture is based on the following business requirements.
+
+1. User interface (Frontend)
+2. Data storage and management (Backend)
+3. Testing
+4. CI/CD (automatic building, testing and deploying)
+5. Security
+6. Scalability
+7. Performance
+
+The architecture is comprehensive and utilizes modern technologies and best practices for building robust and scalable web applications. Stack choices have bene made based on their simplicity, robustness, maintenance, performance, security and scalability.
 
 ### 1. Client-Side (Frontend) Architecture:
 
@@ -52,29 +56,38 @@ The architecture is comprehensive and utilizes modern technologies and best prac
 - [Next.js](https://nextjs.org/docs) - Chosen as the React framework because it is designed specifically for serving web applications. It adds server-side rendering and routing capabilities, improving performance and SEO. It is also recommended by React.
   [`(See React recommended frameworks)`](https://react.dev/learn/start-a-new-react-project)
 
-- **TypeScript** - Enhances code quality and developer productivity by adding static typing to JavaScript, catching errors during development.
+- [TypeScript](https://www.typescriptlang.org/) - Enhances code quality and developer productivity by adding static typing to JavaScript, catching errors during development.
 
-- **ContextAPI** - Chosen for state management because it provides a centralized way to manage state in React applications using native functions, making data sharing between components more manageable and efficient.
+- [ContextAPI](https://react.dev/reference/react/createContext) - Chosen for state management because it provides a centralized way to manage state in React applications using native functions, making data sharing between components more manageable and efficient.
 
-- **SASS** - A CSS preprocessor that adds features like variables, mixins, and nesting, making styling more organized and maintainable.
+- [SASS](https://sass-lang.com) - A CSS preprocessor that adds features like variables, mixins, and nesting, making styling more organized and maintainable.
 
 ### 2. Server-Side (Backend) Architecture:
 
-- Node.js: A runtime environment for executing JavaScript code on the server side, enabling scalable and efficient backend development.
+- [Node] - Chosen for creating the API, since it allows for building scalable and efficient server-side applications using JavaScript.
 
-- MongoDB: A NoSQL database that offers scalability, flexibility, and compatibility with Node.js, suitable for storing and managing application data.
+- [MongoDB] - Chosen for storing and managing data due to its robustness and scalability, with its NoSQL model providing efficient handling of complex data structures and seamless integration with Node.js.
 
 ### 3. Testing and Quality Assurance:
 
-- Jest and React Testing Library: Tools for writing and executing unit tests and integration tests for frontend components, ensuring code reliability and correctness.
+- [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Chosen for testing the application frontend, with Jest as the testing framework (test runner) and React Testing Library for testing React components, enabling unit tests and integration tests execution and ensuring code reliability and correctness.
+
+- [Vercel Insights] and [Lighthouse] were chosen for performance testing.
 
 <!-- - API Testing: Additional frameworks or tools can be used to test backend API endpoints and functionality, ensuring robustness and stability. -->
 
-### 4. Deployment and Scalability:
+### 4. Continuous Integration and Continuous Deployment
+
+- Git - Chosen as Version Control System (VCS) for managing different software versions effectively.
+
+- Github - Chosen as the platform for hosting and sharing repositories, along with managing development and production environments.
+
+- Github Actions - Chosen for
+  (Jenkins: Could be used instead of Github Actions)
+
+- Vercel has been chosen for managing the CI/CD Pipelines (Continuous Integration and Continuous Deployment Pipelines), watching updates on Github and automatically building, testing and deploying new pushed versions. This reduces manual errors and improves deployment speed.
 
 <!-- - Docker and Kubernetes: Containerization using Docker and orchestration with Kubernetes facilitate deployment and scalability of containerized applications, improving efficiency and management. -->
-
-- CI/CD Pipelines: Continuous Integration and Continuous Deployment pipelines automate testing, building, and deployment processes, reducing manual errors and improving deployment speed.
 
 ### 5. Security:
 
@@ -86,13 +99,13 @@ The architecture is comprehensive and utilizes modern technologies and best prac
 
 - MongoDB Security Features: Utilizes access control, authentication mechanisms, and encryption options provided by MongoDB to secure the database and prevent unauthorized access.
 
-This architecture combines frontend and backend technologies effectively, incorporates testing, deployment, and security practices, and focuses on scalability and maintainability, making it well-suited for developing modern web applications.
-
 ### More
+
+This architecture combines frontend and backend technologies effectively, incorporates testing, deployment, and security practices, and focuses on scalability and maintainability, making it well-suited for developing modern web applications.
 
 The frontend architecture can easily be upgraded to a microfrontend structure as business scales.
 
-Next 14 is used (https://nextjs.org/blog/next-14), which enables features
+Next 14 is used (https://nextjs.org/blog/next-14), which enables features for optimized performance, like Server Components and Server Actions.
 
 The automated tests written are requirement driven, preventing future code changes from affecting business requirements.
 
