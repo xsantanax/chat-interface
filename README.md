@@ -16,20 +16,26 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 ### Stack Choices
 
-The following tools have been chosen due to their robustness, simplicity, and scalability.
+The following tools have been chosen due to their robustness, simplicity, maintenance, performance, security and scalability.
 
-- [ReactJS](https://react.dev/) was chosen as the base frontend framework.
+- [Javascript] - Chosen as language for its compatibility with other chosen frameworks and its widespread use in web development.
 
-- [NextJS](https://nextjs.org/docs) was chosen as the React framework since it is degined for serving web applications, which is this project case.
-  [`(See react recommended frameworks)`](https://react.dev/learn/start-a-new-react-project)
+- [React](https://react.dev/) - Chosen as the base frontend framework due to its component-based architecture, where each component encapsulates its own logic, state, and rendering behavior. This makes building user interfaces simple, manageable and efficient.
 
-- [TypeScript](https://www.typescriptlang.org/) was chosen for type safety.
+- [Next.js](https://nextjs.org/docs) - Chosen as the React framework because it is designed specifically for serving web applications. It adds server-side rendering and routing capabilities, improving performance and SEO. It is also recommended by React.
+  [`(See React recommended frameworks)`](https://react.dev/learn/start-a-new-react-project)
 
-- [ContextAPI](https://react.dev/reference/react/createContext) was chosen for state management.
+- [TypeScript](https://www.typescriptlang.org/) - Chosen for type safety, which helps catch errors during development and improves code quality and maintainability.
 
-- [SASS](https://sass-lang.com) was chosen for styling.
+- [ContextAPI](https://react.dev/reference/react/createContext) - Chosen for state management.
 
-- [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) were chosen for testing.
+- [SASS](https://sass-lang.com) - Chosen for styling due to its features like variables, mixins, nesting, and simpler indentation syntax, which make styling more organized and maintainable.
+
+- [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Chosen for testing the application, with Jest as the testing framework (test runner) and React Testing Library for testing React components.
+
+- [Node] - Chosen for creating the API, since it allows for building scalable and efficient server-side applications using JavaScript.
+
+- [MongoDB] - Chosen for database management due to its robustness and scalability, providing efficient handling of complex data structures and seamless integration with Node.js for a streamlined development process.
 
 ### More
 
