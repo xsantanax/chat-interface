@@ -37,23 +37,26 @@ The following tools have been chosen due to their robustness, simplicity, mainte
 
 ## Architecture
 
-This solution architecture is based on the following business requirements.
+This solution architecture is based on the following requirements:
+
+Functional Requirements
 
 1. User interface (Frontend)
 2. Data storage and management (Backend)
 3. Testing
 4. CI/CD (automatic building, testing and deploying)
+
+Non-Functional Requirements
+
 5. Security
 6. Scalability
 7. Performance
 
-The architecture is comprehensive and utilizes modern technologies and best practices for building robust and scalable web applications. Stack choices have bene made based on their simplicity, robustness, maintenance, performance, security and scalability.
-
 ### 1. Client-Side (Frontend) Architecture:
 
-- [React](https://react.dev/) - Chosen as the base frontend framework due to its component-based architecture, where each component encapsulates its own logic, state, and rendering behavior. This makes building user interfaces simple, manageable and efficient.
+- [React](https://react.dev/) - Chosen as the base frontend framework due to its component-based architecture, where each component encapsulates its own logic, state, and rendering behavior. This makes building user interfaces simple, manageable and efficient, bringing simplicity, robustness and scalability to the software.
 
-- [Next.js](https://nextjs.org/docs) - Chosen as the React framework because it is designed specifically for serving web applications. It adds server-side rendering and routing capabilities, improving performance and SEO. It is also recommended by React.
+- [Next.js](https://nextjs.org/docs) - Chosen as the React framework because it is designed specifically for serving web applications. It adds server-side rendering and routing and SEO capabilities, improving performance, scalability and . It is also recommended by React.
   [`(See React recommended frameworks)`](https://react.dev/learn/start-a-new-react-project)
 
 - [TypeScript](https://www.typescriptlang.org/) - Enhances code quality and developer productivity by adding static typing to JavaScript, catching errors during development.
@@ -82,10 +85,11 @@ The architecture is comprehensive and utilizes modern technologies and best prac
 
 - Github - Chosen as the platform for hosting and sharing repositories, along with managing development and production environments.
 
-- Github Actions - Chosen for
-  (Jenkins: Could be used instead of Github Actions)
+- Github Actions - Chosen for automating CI/CD pipelines.
 
-- Vercel has been chosen for managing the CI/CD Pipelines (Continuous Integration and Continuous Deployment Pipelines), watching updates on Github and automatically building, testing and deploying new pushed versions. This reduces manual errors and improves deployment speed.
+- Vercel has been chosen for managing the CI/CD Pipelines (Continuous Integration and Continuous Deployment Pipelines) using Github Actions, watching updates on Github and automatically building, testing and deploying new pushed versions. This reduces manual errors and improves deployment speed, making software development more reliable, scalable and performant.
+
+(Jenkins could be used instead of Vercel and Github Actions)
 
 <!-- - Docker and Kubernetes: Containerization using Docker and orchestration with Kubernetes facilitate deployment and scalability of containerized applications, improving efficiency and management. -->
 
