@@ -4,7 +4,7 @@ This is a simple web chat interface project designed to showcase frontend engine
 
 ### Live Demo
 
-You can check the app live demo at [https://chat-interface-xsantanax.vercel.app](https://chat-interface-xsantanax.vercel.app).
+You can check the app live demo at [https://one-news-xsantanax.vercel.app](https://chat-interface-xsantanax.vercel.app).
 
 You can also run it in your machine. First, run the development server. (`npm run dev` or `yarn dev`)
 
